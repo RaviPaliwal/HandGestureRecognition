@@ -56,16 +56,14 @@ class handDetector:
                 return 'Superb'    
         elif fingers==[1,0,0,0] and abs(lmList[4][2]-lmList[8][2]) >abs(lmList[10][1]-lmList[5][1]) and lmList[4][1]>lmList[10][1] :
             return "Warning"
-        elif fingers==[0,0,1,0] and lmList[4][2]>lmList[16][2] and lmList[12][2]>lmList[16][2] and lmList[8][2]>lmList[16][2]and lmList[20][2]>lmList[16][2]:
-            return "Abuse"
         elif fingers == [0,0,0,0] and lmList[4][2]<lmList[3][2]:
             return "Thumbs Up!"
         elif fingers == [0,0,0,0] and lmList[4][2]>lmList[3][2] and lmList[20][2]<lmList[1][2]:
             return "Thumbs Down!" 
         elif fingers == [1,1,0,0] and lmList[8][1]-lmList[12][1]>lmList[6][1]-lmList[10][1]:
-            return "Swag !"       
+            return "Peace !"       
         elif fingers == [1,1,0,0] and lmList[12][1]>lmList[8][1]:
-            return "Love" 
+            return "Promise" 
 
 def main():
     cap = cv2.VideoCapture(0)
